@@ -1,45 +1,31 @@
-/* 
-body{
-    background-color: lightgoldenrodyellow;
-    font-size: 18px;
-    line-height: 2;
-  }
 
-nav li{
-  display:inline;
-}
-
-nav a:hover{
-    color: aqua;
-}
-nav ul li a:link, nav ul li a:active {
-    color: red;
-}
-
-nav{
-    background-color: lightcoral;
-    padding: 25px 0; 
-    text-align: left;
-  }
-
-
-footer{
-  background-color: black;
-  color: white;
-  padding-top: 30px;
-  text-align: center;
-} */
 html{
     scroll-behavior: smooth;
   }
   
-  body{
+body{
     background-color: lightgoldenrodyellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: navy;
     font-size: 18px;
     margin: 0;
     padding: 0;
   }
 
+h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+h2{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 0 10px 0 10px;
+  }
 nav li{
     display:inline;
     padding-right:20px;
@@ -71,25 +57,120 @@ nav a:hover {
     text-decoration: underline;
 	font-weight: bolder;
 }
+.content{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-gap: 10px;
+  }
 
-   
+
+.about_aa, .law_quad, .study_spots, .study_breaks, .michigan_classics, .saturdays{
+    background-color: lightgoldenrodyellow;
+    grid-column: 2 / span 1 ;
+}
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid navy ;
+  padding: 30px;
+}
+  
+  
 
 
-@media screen and (min-width: 700px ){
+@media screen and (min-width: 600px ){
     body{
-        background-color: blue;
+        background-color: white;
       }
     h1{
-        color: aquamarine;
+        color: navy;
     }
+    .about_aa, .law_quad, .study_spots, .study_breaks, .michigan_classics, .saturdays{
+        background-color: lightgoldenrodyellow;
+        grid-column: 2 / span 1 ;
+    
     }
-
-@media screen and (min-width: 900px ){
+    .about_aa-image, .law_quad-image, .study_spots-image, .study_breaks-image, .michigan_classics-image, .saturdays-image{
+        grid-column: 1 / -1; 
+        /* max-height: 200px;
+        max-width: 400px; */
+        align-self: center;  
+        overflow: hidden;
+      }
+      
+      .about_aa, .about_aa_image{
+        grid-row: 2 / span 1;
+      } 
+      
+      .law_quad, .law_quad_image{
+        grid-row: 3 / span 1;
+      }
+    
+      .study_spots, .study_spots_image{
+        grid-row: 4 / span 1;
+      }
+      
+      .study_breaks, .study_breaks_image{
+        grid-row: 5 / span 1;
+      }
+      
+      .michigan_classics, .michigan_classics_image{
+        grid-row: 6 / span 1;
+      }
+      .saturdays, .saturdays_image{
+        grid-row: 7 / span 1;
+      }
+      .text-block{
+        justify-self: center;
+        text-align: center;
+        align-self: center;      
+      }
+    }
+ 
+/* @media screen and (min-width: 900px ){
     body{
         background-color: red;
       }
+    } */
+
+    /*
     h1{
         color: green;
+    }
+    .about_aa, .law_quad, .study_spots, .study_breaks, .michigan_classics, .saturdays{
+        background-color: lightgoldenrodyellow;
+        grid-column: 2 / span 2 ;
+    
+    }
+    .about_aa_image, .law_quad_image, .study_spots_image, .study_breaks_image, .michigan_classics_image, .saturdays_image{
+        grid-column: 1 / -1; 
+        max-height: 600px;
+        overflow: hidden;
+      }
+      
+      .about_aa, .about_aa_image{
+        grid-row: 2 / span 2;
+      } 
+      
+      .law_quad, .law_quad_image{
+        grid-row: 3 / span 2;
+      }
+    
+      .study_spots, .study_spots_image{
+        grid-row: 4 / span 2;
+      }
+      
+      .study_breaks, .study_breaks_image{
+        grid-row: 5 / span 2;
+      }
+      
+      .michigan_classics, .michigan_classics_image{
+        grid-row: 6 / span 2;
+      }
+      .saturdays, .saturdays_image{
+        grid-row: 7 / span 2;
+      }
+      
     }
     }
 
@@ -102,4 +183,4 @@ nav a:hover {
         color: pink;
     }
 
-  }
+  } */
