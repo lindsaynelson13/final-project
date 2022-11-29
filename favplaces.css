@@ -67,26 +67,34 @@ li a:hover:not(.active) {
     color: navy;
   }
 
-img{
+/* img{
   max-width: 400px;
-}
+  align-self: center;
+} */
 .content{
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 10px;
   }
 
 
 .about_aa, .law_quad, .study_spots, .study_breaks, .michigan_classics, .saturdays{
   background-color: lightgoldenrodyellow;
-  grid-column: 2 / span 1 ;
+  grid-column: 1 / span 1 ;
   max-width: 200px;
   max-height: 500px;
+  align-self: center;
+  justify-items: center;
 }
 
 .about_aa{
   grid-row: 2 / span 1;
 } 
+
+.about_aa img{
+  justify-items: center;
+  align-self: center;
+}
 
 .law_quad{
   grid-row: 3 / span 1;
