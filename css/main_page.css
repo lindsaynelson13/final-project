@@ -1,0 +1,155 @@
+body{
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: navy;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: navy;
+    top: 0 ;
+    width: 100%;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li a:hover:not(.active) {
+    background-color: navy;
+  }
+  
+.active {
+    background-color:gold ;
+    color: navy;
+  }
+/* body p {
+  color: navy;
+} */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    line-height: 1;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+}
+
+
+.container div{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    color: navy;
+    width: 100%;
+  }
+
+.overview {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: orange;
+    flex: 1; */
+}
+
+/* .video{
+    display: block; 
+    visibility: collapse;
+} */
+
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+    /* display: block;
+    text-align: center;} */
+
+
+.vid_link{
+    display: block;
+    text-align: center;
+
+}
+.vid_link img{
+    width: 75%;
+}
+footer{
+    display: block;
+    color: black;
+    text-align: left;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
+
+/* .video{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .vid_link {
+    display: none;
+    /* flex-wrap: wrap;
+    width: 100%; */
+
+/* .video{
+    display: none ;
+    display: flex;
+    flex: 1;
+    width: 50%;
+    margin: 0 auto; 
+
+} 
+
+
+/* #video {
+    display: none;
+    /* position: absolute; 
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; */
+
+
+/* Desktop menu  */
+
+/* @media screen and (min-width: 900px){
+    li{
+      float:left;
+    }
+
+    .video{
+
+    }
+
+    .vid_link{
+        visibility: collapse;
+    }
+  } */
