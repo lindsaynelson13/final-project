@@ -1,21 +1,27 @@
 
 nav{
     background-color: navy;
+    margin: auto;
+}
+
+main h1{
+  color: navy;
+  font-family: Palatino, URW Palladio L, serif;
+  text-align: center;
 }
 
 ul {
-    /* list-style-type: none; */
-    margin: 0;
+    list-style-type: none;
+    margin: auto;
     padding: 0;
     overflow: hidden;
     background-color: navy;
-    /* position: fixed; */
     top: 0 ;
     width: 100%;
   }
   
 li{
-    float: left;
+    float:none;
   }
   
 li a {
@@ -31,6 +37,16 @@ li a:hover:not(.active) {
   }
   
 .active {
-    background-color:white ;
+    background-color:gold ;
     color: navy;
   }
+body p {
+  color: navy;
+}
+
+@media screen and (min-width: 900px){
+  li{
+    float:left;
+  }
+
+}
