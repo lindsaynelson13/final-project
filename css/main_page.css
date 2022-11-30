@@ -2,6 +2,13 @@ body{
     background-color: white;
 }
 
+
+main h1{
+  color: navy;
+  font-family: Palatino, URW Palladio L, serif;
+  text-align: center;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +28,7 @@ ul {
     width: 100%;
   }
 li a {
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -36,20 +43,14 @@ li a:hover:not(.active) {
     background-color:gold ;
     color: navy;
   }
-/* body p {
-  color: navy;
-} */
 
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
-    line-height: 1;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; */
+    background-color: white;
+    line-height: 2;
 }
 
 
@@ -60,20 +61,25 @@ li a:hover:not(.active) {
     overflow: hidden;
     background-color: white;
     color: navy;
-    width: 100%;
+    width: 60%;
   }
+
+.overview p:nth-child(3){
+  font-weight: bolder;
+  font-style: oblique;
+} 
+.container p{
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+}
 
 .overview {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     background-color: orange;
-    flex: 1; */
 }
 
 /* .video{
@@ -81,13 +87,15 @@ li a:hover:not(.active) {
     visibility: collapse;
 } */
 
-video {
-  display: block;
-  max-width: 100%;
+/* video {
+  display: flex;
+  /* height:80%;
+  width:80%;
+  position:absolute; */
+/* iframe{
+  width: auto;
   height: auto;
-}
-    /* display: block;
-    text-align: center;} */
+} */
 
 
 .vid_link{
@@ -99,13 +107,10 @@ video {
     width: 75%;
 }
 footer{
-    display: block;
-    color: black;
+    display: flex;
+    color: navy;
     text-align: left;
-    justify-content: flex-end;
     flex-wrap: wrap;
-    padding: 5px;
-
 }
 
 /* .video{
@@ -140,16 +145,8 @@ footer{
 
 /* Desktop menu  */
 
-/* @media screen and (min-width: 900px){
+@media screen and (min-width: 900px){
     li{
       float:left;
     }
-
-    .video{
-
-    }
-
-    .vid_link{
-        visibility: collapse;
-    }
-  } */
+  }
