@@ -1,0 +1,154 @@
+
+html{
+    scroll-behavior: smooth;
+  }
+
+#main h2{
+    text-align: center;
+    color: navy;
+}
+
+#main p{
+    text-align: center;
+    margin: 30px;
+    color: navy;
+}
+
+
+.gallery div{
+  background-color: white;
+  color: navy;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+} 
+
+.gallery img{
+  display: grid;
+  position: relative;
+  grid-template-columns: auto;
+  margin: auto;
+  width: 90%;
+  height: auto;
+  grid-row: 1 / -1;
+}
+
+
+@media screen and (min-width: 600px){
+  .gallery img{
+      border: 2px solid navy;
+  }
+  .gallery div:hover {
+    border: 15px solid gold;
+  }}
+
+/* 
+@media screen and (min-width: 900px){
+    .gallery img{
+        border: 2px solid navy;
+    }
+
+    .image1 #caption{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        background: rgba(2, 19, 128, 0.75);
+        color: white;
+    }
+
+    .image1{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+    
+    img:nth-child(2){
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+    }
+    
+    img:nth-child(3){
+        grid-column: 5 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+} */
+
+
+
+/* body{
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: navy;
+    font-size: 18px;
+    margin: 25px;
+    padding: 0;
+  }
+
+h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+h2{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 0 10px 0 10px;
+  }
+
+p {
+    text-align: center;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  }
+.gallery{
+  display: grid;
+} */
+
+
+/* .about_aa, .law_quad, .study_spots, .study_breaks, .michigan_classics, .saturdays{
+  background-color: lightgoldenrodyellow;
+  grid-column: 1 / span 1 ;
+  max-width: 200px;
+  max-height: 500px;
+  align-self: center;
+  justify-items: center;
+} */
+
+/* .about_aa{
+  grid-row: 2 / span 1;
+} 
+
+.about_aa img{
+  justify-items: center;
+  align-self: center;
+}
+
+.law_quad{
+  grid-row: 3 / span 1;
+}
+
+.study_spots{
+  grid-row: 4 / span 1;
+}
+
+.study_breaks{
+  grid-row: 5 / span 1;
+}
+
+.michigan_classics{
+  grid-row: 6 / span 1;
+}
+.saturdays{
+  grid-row: 7 / span 1;
+
+} */
+

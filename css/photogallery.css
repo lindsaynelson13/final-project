@@ -1,10 +1,8 @@
-h1{
-	color: navy;
-    background-color: white;
+#main h2{
+    text-align: center;
 }
 
-#main h2, h3, p{
-    color: navy;
+#main p{
     text-align: center;
     margin: 30px;
 }
