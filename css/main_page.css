@@ -145,7 +145,7 @@ footer{
 
 /* Desktop menu  */
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 600px){
     li{
       float:left;
     }
