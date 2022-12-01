@@ -1,0 +1,18 @@
+h1{
+    color: navy;
+    font-family: Palatino, URW Palladio L, serif;
+    text-align: center;
+  }
+
+body footer{
+    background-color: navy;
+}
+
+body footer p{
+    text-align: left;
+    color: white;
+}
+
+.skip{
+    color: white;
+}
