@@ -120,11 +120,11 @@ footer{
 /* Desktop menu  */
 @media screen and (max-width: 900px){
 .video{
-  visibility: hidden;
+  display: none;
 }
 }
 
-@media screen and (min-width: 599px){
+@media screen and (min-width: 700px){
   nav{
     flex-direction: row;
   }
@@ -138,6 +138,6 @@ footer{
 
 @media screen and (min-width: 900px){
 .vid_link{
-  visibility: collapse;
+  display: none;
 }
 }
