@@ -23,12 +23,12 @@ a.skip{
 
 a.skip:focus{
   top:20px;
-  color: black;
+  color: navy;
   text-decoration-style: solid;
 }
 
 *:focus{
-  border: 2px solid black;
+  border: 2px solid navy;
 }
 
 ul {
@@ -66,11 +66,24 @@ body p {
   color: navy;
 }
 
+
+/* tablet menu  */
+
+@media screen and (min-width: 700px){
+  li a{
+    font-weight: bolder;
+  }
+  
+}
+
 /* Desktop menu  */
 
 @media screen and (min-width: 900px){
   li{
     float:left;
+  }
+  li a{
+    font-weight: normal;
   }
 
 }

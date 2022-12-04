@@ -23,12 +23,12 @@ a.skip{
 
 a.skip:focus{
   top:20px;
-  color: black;
+  color: navy;
   text-decoration-style: solid;
 }
 
 *:focus{
-  border: 2px solid black;
+  border: 2px solid navy;
 }
 
 nav {
@@ -117,16 +117,11 @@ justify-content: center;
 }
 
 
-/* .vid_link{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-} */
 .video img{
   width: auto;
   height: auto;
   justify-content: center;
+  align-items: center;
 }
 
 footer{
@@ -139,12 +134,16 @@ footer{
 
 
 
-/* Desktop menu  */
+/* mobile video view menu  */
 @media screen and (max-width: 900px){
 .video{
   display: none;
 }
 }
+
+
+
+/* tablet menu  */
 
 @media screen and (min-width: 700px){
   nav{
@@ -155,11 +154,23 @@ footer{
   }
   li a {
     flex-direction: row;
+    font-weight: bolder;
   }
+  .video{
+    display: flex;
+  }
+
+
 }
+
+/* desktop view menu  */
 
 @media screen and (min-width: 900px){
 .vid_link{
   display: none;
 }
+li a {
+  font-weight: normal;
 }
+}
+
