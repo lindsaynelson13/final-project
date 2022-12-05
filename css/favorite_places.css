@@ -8,11 +8,6 @@ html{
   font-size: calc(1rem + 1vw);
 }
 
-#main p{
-  text-align: center;
-  margin: 30px;
-  color: navy;
-}
 
 .gallery{
   display: grid;
